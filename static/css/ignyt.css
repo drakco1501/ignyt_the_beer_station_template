@@ -1,0 +1,237 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.emtspace{
+  background-color: black;
+}
+/* navigation bar */
+.navbar{
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h3{
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 35px;
+  background-color: black;
+  min-width: 30%;
+  margin: 0px;
+  text-shadow: 1px 0px 2px grey;
+}
+.navbar b{
+  color : rgb(217, 197, 15);
+  font-size: 1.3em;
+}
+.navbar ul{
+  list-style-type: none;
+  background-color: black;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px;
+  margin: 0px;
+  display: block;
+  min-width: 30%;
+}
+
+.navbar a{
+  padding: 7px 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.navbar li{
+float :left;
+}
+
+.navbar img{
+  display: inline-block;
+  width: 98px;
+  height: 98px;
+  padding-left: 30px;
+  background-color: black;
+}
+
+.navbar a:hover{
+  background-color: rgb(217, 197, 15);
+  color: black;
+  text-shadow: 2px 2px 3px white;
+  box-shadow: 2px 2px 3px white;
+}
+
+/* image slider  */
+
+.imgslider{
+  width: 85%;
+  height: 400px;
+  background-image: url("../img/ambience/ambience1.jpg");
+  background-size: 100% 100%;
+  animation: changeImage 20s infinite;
+}
+@keyframes changeImage {
+  0%{
+    background-image: url("../img/ambience/ambience1.jpg");
+  }
+  20%{
+    background-image: url("../img/ambience/ambience2.jpg");
+  }
+  40%{
+    background-image: url("../img/ambience/ambience3.jpg");
+  }
+  60%{
+    background-image: url("../img/ambience/ambience4.jpg");
+  }
+  80%{
+    background-image: url("../img/ambience/quote1.jpg");
+  }
+  100%{
+    background-image: url("../img/ambience/quote2.jpg");
+  }
+}
+
+/* about section */
+.about{
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+  background-color: black;
+}
+.about a{
+  text-shadow: none;
+  color: red;
+}
+.abtinfo {
+  display : inline-block;
+  border-radius: 15px;
+  padding: 15px;
+  width : 40%;
+  height : 300px;
+  background-color: rgba(45,36,78,60);
+  box-shadow: -2px 2px 3px grey;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  overflow: hidden;
+}
+.abtinfo:hover{
+  width : 42%;
+  height : 320px;
+}
+.abtinfo p{
+  height: 200px;
+  padding: 0px 20px;
+  overflow: hidden;
+}
+.abtpic{
+  display: inline-block;
+  background-image: url("./frame.jpg");
+  background-size: 100% 100%;
+}
+.abtpic img{
+  width : 300px;
+  height : 300px;
+  padding: 0px;
+  margin: 0px;
+}
+/* home page menu slid show */
+.menuDef{
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+  background-color: black;
+}
+.menuinfo{
+  display : inline-block;
+  border-radius: 15px;
+  padding: 15px;
+  width : 35%;
+  height : 470px;
+  background-color: rgba(45,36,78,60);
+  box-shadow: 2px -2px 3px grey;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.menuinfo:hover{
+  width : 37%;
+  height : 490px;
+}
+.menuinfo a{
+  color: red;
+  text-shadow: none;
+}
+.menuinfo p{
+    height: 380px;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+.menuslider{
+  width: 350px;
+  height: 500px;
+  margin: 0px ;
+  padding: 0px;
+  border-radius: 25px;
+  background-image: url("../img/ambience/ambience1.jpg");
+  background-size: 100% 100%;
+  animation: changeMenu 20s infinite;
+}
+@keyframes changeMenu {
+  0%{
+    background-image: url("../img/menu/menu1.jpg");
+  }
+  10%{
+    background-image: url("../img/menu/menu2.jpg");
+  }
+  20%{
+    background-image: url("../img/menu/menu3.jpg");
+  }
+  30%{
+    background-image: url("../img/menu/menu4.jpg");
+  }
+  40%{
+    background-image: url("../img/menu/menu5.jpg");
+  }
+  50%{
+    background-image: url("../img/menu/menu6.jpg");
+  }
+  60%{
+    background-image: url("../img/menu/menu7.jpg");
+  }
+  70%{
+    background-image: url("../img/menu/menu8.jpg");
+  }
+  80%{
+    background-image: url("../img/menu/menu9.jpg");
+  }
+  90%{
+    background-image: url("../img/menu/menu10.jpg");
+  }
+  100%{
+    background-image: url("../img/menu/menu11.jpg");
+  }
+}
+
+/* footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  height: 35px;
+}
+.footer img{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+.footer img:hover{
+  width: 45px;
+  height: 45px;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 50px;
+  cursor: pointer;
+}
